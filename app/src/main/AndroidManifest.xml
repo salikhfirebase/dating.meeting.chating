@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="volts.kershief.chane">
+          package="dating.meeting.chating">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -91,7 +91,7 @@
             android:networkSecurityConfig="@xml/network"
             tools:ignore="GoogleAppIndexingWarning">
 
-        <receiver android:name=".SimpleWidgetProvider">
+        <receiver android:name="dating.meeting.chating.SimpleWidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -107,7 +107,7 @@
                 android:value="ca-app-pub-7165343268428671~8051940137"/>
 
         <receiver
-                android:name="volts.kershief.chane.ReferrerDataReceiver"
+                android:name="dating.meeting.chating.ReferrerDataReceiver"
                 android:enabled="true"
                 android:exported="true">
             <intent-filter>
@@ -116,18 +116,18 @@
         </receiver>
 
         <activity
-                android:name="volts.kershief.chane.MyPersonalProfileEditActivity">
+                android:name="dating.meeting.chating.OhCanYouSeeProfileEditActivity">
         </activity>
         <activity
-                android:name="volts.kershief.chane.PictureSetupQActivity">
+                android:name="dating.meeting.chating.PictureSetupPorCoActivity">
         </activity>
         <activity
-                android:name="volts.kershief.chane.PersonalCabinaActivity"
+                android:name="dating.meeting.chating.PersonalRazvaliliActivity"
                 android:label="@string/title_activity_user_profile"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name="volts.kershief.chane.QuestionaireMainQwerActivity">
+                android:name="dating.meeting.chating.QuestionairePerdoleActivity">
         </activity>
 
         <meta-data
@@ -151,10 +151,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="volts.kershief.chane.MainSamatActivity">
+                android:name="dating.meeting.chating.MainSsOpeActivity">
         </activity>
         <activity
-                android:name="volts.kershief.chane.ui.SplashActivity"
+                android:name="dating.meeting.chating.ui.SplashActivity"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -163,12 +163,12 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="volts.kershief.chane.ui.WebVActivity"
+                android:name="dating.meeting.chating.ui.WebVActivity"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name="volts.kershief.chane.ui.DeepLinkWebView"
+                android:name="dating.meeting.chating.ui.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">
@@ -229,7 +229,7 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="volts.kershief.chane.ui.ContentActivity"
+                android:name="dating.meeting.chating.ui.ContentActivity"
                 android:launchMode="singleTask" />
     </application>
 

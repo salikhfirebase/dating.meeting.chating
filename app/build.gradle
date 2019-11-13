@@ -9,7 +9,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "volts.kershief.chane"
+        applicationId "dating.meeting.chating"
         minSdkVersion 18
         targetSdkVersion 29
         versionCode 1
@@ -18,7 +18,7 @@ android {
         multiDexEnabled true
 
         manifestPlaceholders = [
-                onesignal_app_id: '2c389417-9c0e-4a4a-ad0b-32079a5d1e7e',
+                onesignal_app_id: '56f29c31-f417-4601-86b8-b43fe349a6c3',
                 // Project number pulled from dashboard, local value is ignored.
                 onesignal_google_project_number: 'REMOTE'
         ]
@@ -29,7 +29,8 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
