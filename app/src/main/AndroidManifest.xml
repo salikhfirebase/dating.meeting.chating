@@ -82,9 +82,9 @@
     <application
             android:allowBackup="true"
             android:hardwareAccelerated="true"
-            android:icon="@drawable/volts_kershief_chane_ico"
+            android:icon="@drawable/dating_meetin_chatting"
             android:label="@string/app_name"
-            android:roundIcon="@drawable/volts_kershief_chane_ico"
+            android:roundIcon="@drawable/dating_meetin_chatting"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
